@@ -1,4 +1,5 @@
 import time
+import math
 
 def add():
     print("")
@@ -45,6 +46,14 @@ def Exponent():
     time.sleep(5)
     calculator()
 
+def factorial():
+    print("")
+    input1 = int(input("Enter a number: "))
+    result = math.factorial(input1)
+    print("The result is: ", result)
+    time.sleep(5)
+    calculator()
+
 def calculator():
     print("Select operation:")
     print("1. + = Add")
@@ -52,6 +61,7 @@ def calculator():
     print("3. * = Multiply")
     print("4. / = Divide")
     print("5. ** = Exponent")
+    print("6. ! = Factorial")
 
     choice = input("Enter choice: ")
 
@@ -65,7 +75,9 @@ def calculator():
         divide()
     elif choice == '**':
         Exponent()
-    elif choice != '+' and choice != '-' and choice != '*' and choice != '/' and choice != '**':
+    elif choice == '!':
+        factorial()
+    else:
         print("Invalid input.")
         print("")
         time.sleep(2)
