@@ -1,2 +1,2 @@
 # Calculator-In-Python
-This code produces the answer to adding, subtracting, multiplying, dividing, and exponents. (This Is My First Repositorie)
+This code produces the answer to adding, subtracting, multiplying, dividing, exponents, and Factorials. (This Is My First Repository)
