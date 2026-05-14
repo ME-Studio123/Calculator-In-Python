@@ -54,6 +54,14 @@ def factorial():
     time.sleep(5)
     calculator()
 
+def SquareRoot():
+    print("")
+    input1 = float(input("Enter a number: "))
+    result = math.sqrt(input1)
+    print("The result is: ", result)
+    time.sleep(5)
+    calculator()
+
 def calculator():
     print("Select operation:")
     print("1. + = Add")
@@ -62,6 +70,7 @@ def calculator():
     print("4. / = Divide")
     print("5. ** = Exponent")
     print("6. ! = Factorial")
+    print("7. sqrt = Square Root")
 
     choice = input("Enter choice: ")
 
@@ -77,6 +86,8 @@ def calculator():
         Exponent()
     elif choice == '!':
         factorial()
+    elif choice == 'sqrt':
+        SquareRoot()
     else:
         print("Invalid input.")
         print("")
